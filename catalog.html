@@ -7,9 +7,7 @@
   <body>
     <header class="container">
       <div class="logo">
-        <p>
-          <a href="index.html">Device</a>
-        </p>
+        <a href="/">Device</a>
       </div>
       <div class="user-menu">
         <form class="search-form" action="#" method="get">
@@ -113,8 +111,10 @@
       <div class="container">
         <form class="filter">
           <div class="filter-group">
-            <p class="title">Стоимость</p>
-            <input type="range" name="cost" min="0" max="10000" value="5000">
+            <p class="title">
+              <label for="cost">Стоимость</label>
+            </p>
+            <input type="range" name="cost" id="cost" min="0" max="10000" value="5000">
           </div>
           <div class="filter-group">
             <p class="title">Цвет</p>
@@ -146,39 +146,37 @@
           <button type="submit">Показать</button>
         </form>
         <div class="goods">
-          <div class="goods-item">
+          <article class="goods-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Любительская селфи-палка">
             <div class="goods-info">
               <p class="title">Любительская селфи-палка</p>
               <p>500 руб.</p>
             </div>
-          </div>
-          <div class="goods-item">
+          </article>
+          <article class="goods-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
             <div class="goods-info">
               <p class="title">Профессиональная селфи-палка</p>
               <p>1500 руб.</p>
             </div>
-          </div>
-          <div class="goods-item">
+          </article>
+          <article class="goods-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
             <div class="goods-info">
               <p class="title">Непотопляемая селфи-палка</p>
               <p>2500 руб.</p>
             </div>
-          </div>
-          <div class="goods-item new">
+          </article>
+          <article class="goods-item new">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <div class="goods-info">
               <p class="title">Селфи-палка «Следуй за мной»</p>
               <p>4900 руб.</p>
             </div>
-          </div>
+          </article>
           <div class="pages">
+            <a href="#">Назад</a>
             <ul>
-              <li>
-                <a href="#">Назад</a>
-              </li>
               <li>
                 <a class="active" href="#">1</a>
               </li>
@@ -188,10 +186,8 @@
               <li>
                 <a href="#">3</a>
               </li>
-              <li>
-                <a href="#">Вперед</a>
-              </li>
             </ul>
+            <a href="#">Вперед</a>
           </div>
         </div>
       </div>
