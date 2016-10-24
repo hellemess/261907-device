@@ -1,0 +1,26 @@
+body {
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
+
+  color: #464646;
+}
+
+h1 {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 120%;
+
+  color: black;
+}
+
+h2 {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 120%;
+
+  color: black;
+}
