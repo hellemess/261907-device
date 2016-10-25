@@ -7,15 +7,7 @@ body {
   color: #464646;
 }
 
-h1 {
-  font-family: "Gilroy", "Arial Black", sans-serif;
-  font-size: 47px;
-  font-weight: bold;
-  line-height: 120%;
-
-  color: black;
-}
-
+h1,
 h2 {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 47px;
