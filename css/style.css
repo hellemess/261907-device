@@ -1,8 +1,8 @@
 body {
   font-family: "Open Sans", "Verdana", sans-serif;
   font-size: 15px;
-  font-weight: 100;
-  line-height: 30px;
+  font-weight: 300;
+  line-height: 2;
 
   color: #464646;
 }
@@ -11,7 +11,7 @@ body {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 47px;
   font-weight: bold;
-  line-height: 120%;
+  line-height: 1.2;
 
   color: black;
 }
