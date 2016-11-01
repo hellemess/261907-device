@@ -100,62 +100,76 @@
                 <a href="#">По популярности</a>
               </li>
             </ul>
-            <ul>
-              <li>
-                <a href="#">По возрастанию</a>
-              </li>
-              <li>
-                <a href="#">По убыванию</a>
-              </li>
-            </ul>
+            <span class="ascending">По возрастанию</span>
+            <span class="descending">По убыванию</span>
           </div>
         </div>
       </header>
       <div class="container">
-        <form class="filter" action="#" method="get">
-          <div class="filter-group">
-            <p class="title">
-              <label for="cost">Стоимость</label>
-            </p>
-            <input type="range" name="cost" id="cost" min="0" max="10000" value="5000">
-          </div>
-          <div class="filter-group">
-            <p class="title">Цвет</p>
-            <label>
-              <input type="checkbox" name="black" checked> Черный
-            </label>
-            <label>
-              <input type="checkbox" name="white"> Белый
-            </label>
-            <label>
-              <input type="checkbox" name="blue" checked> Синий
-            </label>
-            <label>
-              <input type="checkbox" name="red" checked> Красный
-            </label>
-            <label>
-              <input type="checkbox" name="pink"> Розовый
-            </label>
-          </div>
-          <div class="filter-group">
-            <p class="title">Bluetooth</p>
-            <label>
-              <input type="radio" name="bluetooth" value="yes" checked> Есть
-            </label>
-            <label>
-              <input type="radio" name="bluetooth" value="no"> Нет
-            </label>
-          </div>
-          <button class="btn" type="submit">Показать</button>
-        </form>
+        <div class="filter">
+          <form action="#" method="get">
+            <fieldset>
+              <legend>
+                <label for="cost">Стоимость</label>
+              </legend>
+              <input type="range" name="cost" id="cost" min="0" max="10000" value="5000">
+            </fieldset>
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="black" checked> Черный
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="white"> Белый
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="blue" checked> Синий
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="red" checked> Красный
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="pink"> Розовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input type="radio" name="bluetooth" value="yes" checked> Есть
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="bluetooth" value="no"> Нет
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn" type="submit">Показать</button>
+          </form>
+        </div>
         <div class="goods">
           <article class="goods-item">
             <img src="img/good-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <a class="btn" href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a>
             <div class="goods-info">
-              <p class="title">Любительская селфи-палка</p>
-              <p>500 руб.</p>
+              <h2>Любительская селфи-палка</h2>
+              <span class="price">500 руб.</span>
             </div>
           </article>
           <article class="goods-item">
@@ -163,8 +177,8 @@
             <a class="btn" href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a
             <div class="goods-info">
-              <p class="title">Профессиональная селфи-палка</p>
-              <p>1500 руб.</p>
+              <h2>Профессиональная селфи-палка</h2>
+              <span class="price">1500 руб.</span>
             </div>
           </article>
           <article class="goods-item">
@@ -172,8 +186,8 @@
             <a class="btn" href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a
             <div class="goods-info">
-              <p class="title">Непотопляемая селфи-палка</p>
-              <p>2500 руб.</p>
+              <h2>Непотопляемая селфи-палка</h2>
+              <span class="price">2500 руб.</span>
             </div>
           </article>
           <article class="goods-item new">
@@ -181,8 +195,8 @@
             <a class="btn" href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a
             <div class="goods-info">
-              <p class="title">Селфи-палка «Следуй за мной»</p>
-              <p>4900 руб.</p>
+              <h2>Селфи-палка «Следуй за мной»<h2>
+              <span class="price">4900 руб.</span class="price">
             </div>
           </article>
           <div class="pages">
