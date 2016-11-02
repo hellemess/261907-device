@@ -222,6 +222,11 @@ header {
   min-height: 38px;
 }
 
+.write-us,
+.map-popup {
+  display: none;
+}
+
 h2 {
   font-family: "Gilroy", "Arial Black", sans-serif;
   font-size: 18px;
