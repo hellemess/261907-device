@@ -4,8 +4,6 @@ body {
 }
 
 body {
-  margin-top: 40px;
-
   font-family: "Open Sans", "Verdana", sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -21,55 +19,129 @@ body {
 }
 
 .logo {
-  height: 36px;
-  margin-bottom: 6px;
-  margin-left: 60px;
+  float: left;
+  height: 37px;
   width: 164px;
 }
 
+header .logo {
+  margin-left: 60px;
+  margin-top: -20px;
+}
+
 header {
-  margin-bottom: -127px;
+  margin-top: 40px;
   min-height: 300px;
+  padding-top: 1px;
 }
 
 .user-menu {
-  margin-bottom: 27px;
+  clear: both;
+  margin-top: 35px;
   margin-left: 60px;
   margin-right: 60px;
-  min-height: 36px;
+}
+
+.search-form {
+  float: left;
+  min-height: 45px;
+  width: 440px;
+}
+
+.user-menu ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+
+  font-size: 0;
+}
+
+.user-menu li {
+  display: inline-block;
+  min-height: 45px;
+  width: 120px;
+
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.user-menu li:first-child {
+  width: 260px;
+}
+
+.user-menu::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .main-menu {
   margin-left: 60px;
   margin-right: 60px;
-  min-height: 36px;
+  margin-top: 30px;
+  min-height: 22px;
   padding-top: 1px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.main-menu > ul > li {
+  display: inline-block;
+  min-height: 22px;
+  width: 160px;
+
+  font-size: 15px;
+}
+
+.main-menu > ul > li:first-child {
+  width: 540px;
+}
+
+.main-menu > ul > li:last-child {
+  width: 180px;
 }
 
 .submenu {
   min-height: 158px;
-  margin-top: 36px;
+  width: 1040px;
+}
+
+.slider {
+  overflow: hidden;
 }
 
 .slider-content {
-  margin-bottom: 92px;
+  margin-top: -114px;
   width: 300%;
+
+  font-size: 0;
 }
 
 .slider-1,
 .slider-2,
 .slider-3 {
   display: inline-block;
-  margin-right: -4px;
   min-height: 500px;
   width: 1160px;
 
+  font-size: 15px;
   vertical-align: bottom;
+}
+
+.slider-1 .headline,
+.slider-2 .headline,
+.slider-3 .headline {
+  font-size: 47px;
 }
 
 .slider-1 img {
   height: 486px;
-  margin-left: 90px;
+  margin-left: 89px;
   width: 384px;
 }
 
@@ -107,7 +179,7 @@ header {
 }
 
 .popular {
-  margin-bottom: 172px;
+  margin-top: 95px;
   min-height: 240px;
   padding: 0;
 
@@ -129,13 +201,17 @@ header {
 
 .popular-item div {
   height: 160px;
-  margin-bottom: 30px;
+}
+
+.popular-item a {
+  display: block;
+  margin-top: 27px;
 }
 
 .services {
-  margin-bottom: 95px;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 173px;
   min-height: 288px;
 }
 
@@ -146,12 +222,31 @@ header {
   width: 280px;
 }
 
-.services-content {
+.services-slide {
   float: right;
-  margin-top: -20px;
+  margin-top: -22px;
   margin-right: 300px;
+  overflow: hidden;
+  width: 460px;
+
+  font-size: 0;
+}
+
+.services-content {
+  width: 300%;
+}
+
+.services-item {
+  display: inline-block;
   min-height: 180px;
   width: 460px;
+
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.services-item .headline {
+  font-size: 47px;
 }
 
 .services .container::after {
@@ -161,7 +256,7 @@ header {
 }
 
 .logotypes {
-  margin-bottom: 150px;
+  margin-top: 95px;
   min-height: 100px;
   padding: 0;
 
@@ -181,7 +276,7 @@ header {
 }
 
 .info {
-  margin-bottom: 82px;
+  margin-top: 150px;
 }
 
 .about {
@@ -203,28 +298,178 @@ header {
 }
 
 .main-footer .container {
-  min-height: 325px;
+  margin-top: 82px;
+  min-height: 322px;
   padding-top: 1px;
 }
 
 .footer-top {
-  margin-top: 65px;
+  margin-top: 64px;
+}
+
+.footer-top ul {
+  float: right;
+  margin: 0;
   min-height: 36px;
+  padding: 0;
+  width: 360px;
+
+  font-size: 0;
+}
+
+.footer-top li {
+  display: inline-block;
+  min-height: 36px;
+  width: 120px;
+
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.footer-top::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .footer-middle {
-  margin-top: 25px;
+  margin-top: 28px;
+}
+
+.address,
+.footer-middle ul,
+.phone-number {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  vertical-align: top;
+}
+
+.address,
+.phone-number {
   min-height: 36px;
+  width: 321px;
+}
+
+.footer-middle ul {
+  width: 510px;
+
+  font-size: 0;
+}
+
+.footer-middle ul li {
+  display: inline-block;
+  min-height: 36px;
+  width: 170px;
+
+  font-size: 15px;
+  vertical-align: top;
 }
 
 .footer-bottom {
-  margin-top: 58px;
+  float: right;
+  margin-top: 55px;
+  width: 660px;
+}
+
+.footer-bottom .social-networks {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 160px;
+
+  font-size: 0;
+}
+
+.footer-bottom .social-networks li {
+  display: inline-block;
+  min-height: 38px;
+  width: 53px;
+
+  vertical-align: middle;
+}
+
+.footer-bottom address {
+  float: right;
+  width: 30px;
   min-height: 38px;
 }
 
-.write-us,
+.write-us {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 553px;
+  padding-top: 1px;
+  width: 960px;
+}
+
+.write-us-form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 95px;
+  min-height: 390px;
+  width: 760px;
+}
+
+.write-us-form .left-field {
+  float: left;
+  width: 400px;
+}
+
+.write-us-form .right-field {
+  float: right;
+  width: 360px;
+}
+
+.write-us-form .left-field,
+.write-us-form .right-field {
+  min-height: 110px;
+}
+
+.write-us-form label {
+  display: block;
+}
+
+.write-us-form input {
+  box-sizing: border-box;
+  min-height: 50px;
+  width: 360px;
+}
+
+.right-field input {
+  float: right;
+}
+
+.write-us-form > label {
+  clear: both;
+  min-height: 30px;
+}
+
+.write-us-form textarea {
+  box-sizing: border-box;
+  min-height: 156px;
+  width: 100%;
+}
+
+.write-us-form button {
+  margin-top: 40px;
+  min-height: 40px;
+  width: 200px;
+}
+
+.exit {
+  height: 55px;
+  width: 55px;
+}
+
 .map-popup {
   display: none;
+  height: 559px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
 }
 
 h2 {
@@ -238,17 +483,6 @@ h2 {
 
 /*цветная подсветка блоков сетки*/
 /*
-body {
-  padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > *,
-body > * > * > * > * {
-  position: relative;
-}
-
 body > * {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
@@ -267,6 +501,12 @@ body > * > * > * {
 body > * > * > * > *{
   background: rgba(102, 205, 170, 0.2);
   box-shadow: inset 0 0 0 2px rgb(102, 205, 170);
+
+}
+
+body > * > * > * > * > * {
+  background: rgba(255, 0, 157, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(255, 0, 157);
 
 }
 */
