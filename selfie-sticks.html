@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Моноподы для селфи — Каталог товаров — HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
+    <header class="main-header container">
       <div class="logo">
         <a href="/">
-          <img src="img/logo.svg" width="164" height="36" alt="Девайс" id="page-top">
+          <img src="img/logo.svg" width="164" height="36" alt="Девайс">
         </a>
       </div>
-      <div class="user-menu">
+      <div class="user-menu clearfix">
         <form class="search-form" action="#" method="get">
-          <input type="text" name="search" placeholder="Поиск по сайту">
-          <button class="btn" type="submit">Найти</button>
+          <input type="search" name="search" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>
         </form>
         <ul>
           <li>
@@ -32,26 +33,38 @@
       </div>
       <nav class="main-menu">
         <ul>
-          <li>
+          <li class="catalog-link">
             <a href="#">Каталог товаров</a>
             <ul>
-              <li>
-                <a href="#">Виртуальная реальность</a>
+              <li class="catalog-group">
+                <ul>
+                  <li class="catalog-item">
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="selfie-sticks.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="#">Моноподы для селфи</a>
+              <li class="catalog-group">
+                <ul>
+                  <li class="catalog-item">
+                    <a href="#">Фитнесс-браслеты</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#">Умные часы</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="#">Фитнесс-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
+              <li class="catalog-group">
+                <ul>
+                  <li class="catalog-item">
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
@@ -68,7 +81,7 @@
       </nav>
     </header>
     <div class="container">
-      <h1 class="headline">Моноподы для селфи</h1>
+      <h1 class="headline-1">Моноподы для селфи</h1>
       <ul class="breadcrumps">
         <li>
           <a href="#">Главная</a>
@@ -83,11 +96,11 @@
     </div>
     <div class="catalog">
       <header class="catalog-header">
-        <div class="container">
+        <div class="clearfix container">
           <div class="filter-header">
             <p>Фильтр:</p>
           </div>
-          <div class="goods-header">
+          <div class="goods-header clearfix">
             <p>Сортировка:</p>
             <ul>
               <li>
@@ -105,14 +118,15 @@
           </div>
         </div>
       </header>
-      <div class="container">
+      <div class="clearfix container">
         <div class="filter">
           <form action="#" method="get">
             <fieldset>
               <legend>
                 <label for="cost">Стоимость</label>
               </legend>
-              <input type="range" name="cost" id="cost" min="0" max="10000" value="5000">
+              <input class="cost-min" type="range" name="cost" id="cost" min="0" max="9000" value="0">
+              <input class="cost-max" type="range" name="cost" id="cost" min="0" max="9000" value="5000">
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
@@ -168,35 +182,35 @@
             <a class="btn" href="#">В корзину</a>
             <a href="#">Добавить к сравнению</a>
             <div class="goods-info">
-              <h2>Любительская селфи-палка</h2>
+              <h2 class="headline-2">Любительская селфи-палка</h2>
               <span class="price">500 руб.</span>
             </div>
           </article>
           <article class="goods-item">
             <img src="img/good-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a
+            <a href="#">Добавить к сравнению</a>
             <div class="goods-info">
-              <h2>Профессиональная селфи-палка</h2>
+              <h2 class="headline-2">Профессиональная селфи-палка</h2>
               <span class="price">1500 руб.</span>
             </div>
           </article>
           <article class="goods-item">
             <img src="img/good-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a
+            <a href="#">Добавить к сравнению</a>
             <div class="goods-info">
-              <h2>Непотопляемая селфи-палка</h2>
+              <h2 class="headline-2">Непотопляемая селфи-палка</h2>
               <span class="price">2500 руб.</span>
             </div>
           </article>
           <article class="goods-item new">
             <img src="img/good-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a
+            <a href="#">Добавить к сравнению</a>
             <div class="goods-info">
-              <h2>Селфи-палка «Следуй за мной»<h2>
-              <span class="price">4900 руб.</span class="price">
+              <h2 class="headline-2">Селфи-палка «Следуй за мной»</h2>
+              <span class="price">4900 руб.</span>
             </div>
           </article>
           <div class="pages">
@@ -217,17 +231,18 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
+    <footer class="main-footer selfie-sticks-footer">
+      <div class="clearfix container">
+        <div class="footer-top clearfix">
           <div class="logo">
             <a href="/">
-              <img src="img/logo.svg" width="164" height="36" alt="Девайс" id="page-top">
+              <img src="img/logo.svg" width="164" height="36" alt="Девайс">
             </a>
           </div>
           <ul>
             <li>
-              <a class="login" href="#">Войти</a>
+              <a class="login" href="#">Валентин Петухов</a>
+              <button class="btn" type="submit">Выйти</button>
             </li>
             <li>
               <a class="compare" href="#">Сравнить</a>
@@ -237,7 +252,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-middle">
+        <div class="footer-middle clearfix">
           <p class="address">г. Москва, ул. Строителей, 15</p>
           <ul>
             <li>
@@ -252,7 +267,7 @@
           </ul>
           <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom clearfix">
           <ul class="social-networks">
             <li>
               <a class="social-networks-fb" href="#">Фейсбук</a>
