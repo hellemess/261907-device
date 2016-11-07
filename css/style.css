@@ -485,74 +485,61 @@ h1,
 }
 
 .catalog {
-  position: relative;
-
   width: 100%;
   margin-top: 50px;
 }
 
-.catalog::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 32%;
-  height: 100%;
-
-  background: #eeeeee;
-}
-
-.filter-header {
+.filter {
+  width: 31.5%;
   float: left;
-  width: 268px;
-  margin: 0;
-  margin-left: 60px;
-  padding: 0;
 }
 
-.goods-header {
+.filter-column {
   float: right;
+  width: 200px;
+  margin-right: 68.5px;
+}
+
+.goods {
+  float: left;
+  width: 68%;
+}
+
+.goods-column {
+  float: left;
+  width: 760px;
+  margin-left: 72px;
+
+  font-size: 0;
 }
 
 .goods-header p,
-.goods-header ul {
+/*.goods-header ul,*/
+.goods-header span {
   float: left;
-  margin: 0;
-  padding: 0;
+
+  font-size: 15px;
 }
 
+.goods-header p,
+.goods-header ul,
+.goods-header span
+
 .goods-header ul {
+  float: left;
+
   list-style: 0;
 }
 
 .goods-header li {
   display: inline-block;
+
+  font-size: 15px;
+  vertical-align: top;
 }
 
-.filter {
-  float: left;
-  width: 327px;
-  margin-left: 0;
-}
-
-.filter form {
-  float: right;
+.filter-column button {
   width: 200px;
-  margin-right: 68px;
-}
-
-.filter button {
-  width: 200px;
-}
-
-.goods {
-  float: right;
-  width: 760px;
-
-  font-size: 0;
 }
 
 .goods-item {

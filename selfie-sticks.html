@@ -94,33 +94,15 @@
         </li>
       </ul>
     </div>
-    <div class="catalog">
-      <header class="catalog-header">
-        <div class="clearfix container">
-          <div class="filter-header">
+    <div class="catalog clearfix">
+      <div class="filter">
+        <header class="filter-header clearfix">
+          <div class="filter-column">
             <p>Фильтр:</p>
           </div>
-          <div class="goods-header clearfix">
-            <p>Сортировка:</p>
-            <ul>
-              <li>
-                <a href="#">По цене</a>
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По популярности</a>
-              </li>
-            </ul>
-            <span class="ascending">По возрастанию</span>
-            <span class="descending">По убыванию</span>
-          </div>
-        </div>
-      </header>
-      <div class="clearfix container">
-        <div class="filter">
-          <form action="#" method="get">
+        </header>
+        <div class="filter-content clearfix">
+          <form class="filter-column" action="#" method="get">
             <fieldset>
               <legend>
                 <label for="cost">Стоимость</label>
@@ -176,57 +158,79 @@
             <button class="btn" type="submit">Показать</button>
           </form>
         </div>
-        <div class="goods">
-          <article class="goods-item">
-            <img src="img/good-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
-            <div class="goods-info">
-              <h2 class="headline-2">Любительская селфи-палка</h2>
-              <span class="price">500 руб.</span>
-            </div>
-          </article>
-          <article class="goods-item">
-            <img src="img/good-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
-            <div class="goods-info">
-              <h2 class="headline-2">Профессиональная селфи-палка</h2>
-              <span class="price">1500 руб.</span>
-            </div>
-          </article>
-          <article class="goods-item">
-            <img src="img/good-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
-            <div class="goods-info">
-              <h2 class="headline-2">Непотопляемая селфи-палка</h2>
-              <span class="price">2500 руб.</span>
-            </div>
-          </article>
-          <article class="goods-item new">
-            <img src="img/good-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <a class="btn" href="#">В корзину</a>
-            <a href="#">Добавить к сравнению</a>
-            <div class="goods-info">
-              <h2 class="headline-2">Селфи-палка «Следуй за мной»</h2>
-              <span class="price">4900 руб.</span>
-            </div>
-          </article>
-          <div class="pages">
-            <a href="#">Назад</a>
+      </div>
+      <div class="goods">
+        <header class="goods-header clearfix">
+          <div class="goods-column">
+            <p>Сортировка:</p>
             <ul>
               <li>
-                <a class="active" href="#">1</a>
+                <a href="#">По цене</a>
               </li>
               <li>
-                <a href="#">2</a>
+                <a href="#">По типу</a>
               </li>
               <li>
-                <a href="#">3</a>
+                <a href="#">По популярности</a>
               </li>
             </ul>
-            <a href="#">Вперед</a>
+            <span class="ascending">По возрастанию</span>
+            <span class="descending">По убыванию</span>
+          </div>
+        </header>
+        <div class="goods-content clearfix">
+          <div class="goods-column">
+            <article class="goods-item">
+              <img src="img/good-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <a class="btn" href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <div class="goods-info">
+                <h2 class="headline-2">Любительская селфи-палка</h2>
+                <span class="price">500 руб.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img src="img/good-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <a class="btn" href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <div class="goods-info">
+                <h2 class="headline-2">Профессиональная селфи-палка</h2>
+                <span class="price">1500 руб.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img src="img/good-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <a class="btn" href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <div class="goods-info">
+                <h2 class="headline-2">Непотопляемая селфи-палка</h2>
+                <span class="price">2500 руб.</span>
+              </div>
+            </article>
+            <article class="goods-item new">
+              <img src="img/good-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <a class="btn" href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <div class="goods-info">
+                <h2 class="headline-2">Селфи-палка «Следуй за мной»</h2>
+                <span class="price">4900 руб.</span>
+              </div>
+            </article>
+            <div class="pages">
+              <a href="#">Назад</a>
+              <ul>
+                <li>
+                  <a class="active" href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+              </ul>
+              <a href="#">Вперед</a>
+            </div>
           </div>
         </div>
       </div>
