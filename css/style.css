@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Open Sans"),
+    url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Gilroy"),
+    url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local("Gilroy"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
 
 body {
   min-width: 1160px;
@@ -72,10 +107,10 @@ body {
   top: 16px;
   left: 3px;
 
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat -122px -53px;
+  background: transparent url("../img/spritesheet.png") no-repeat -121px -52px;
 }
 
 .search-field {
@@ -125,7 +160,8 @@ body {
 
   color: black;
   background: transparent;
-  border: 2px solid black;
+  border: none;
+  box-shadow: 0 0 0 2px black;
 }
 
 .search:hover .search-field::-webkit-input-placeholder {
@@ -145,7 +181,7 @@ body {
 }
 
 .search-field:focus {
-  border-bottom: 2px solid black;
+  box-shadow: 0 2px 0 0 black;
 
   outline: none;
 }
@@ -234,7 +270,7 @@ body {
 
 .user-menu .cart::before {
   top: 4px;
-  left: 2px;
+  left: 4px;
 
   width: 12px;
   height: 12px;
@@ -341,8 +377,8 @@ body {
 
 .catalog-group {
   display: inline-block;
-  min-width: 143px;
-  margin-right: 57px;
+  min-width: 142px;
+  margin-right: 58px;
 
   vertical-align: top;
 }
@@ -376,7 +412,7 @@ body {
 .slider-1 img {
   width: 384px;
   height: 486px;
-  margin-top: 1px;
+  margin-top: 2px;
   margin-left: 90px;
 }
 
@@ -397,7 +433,7 @@ body {
 .specifics {
   float: right;
   width: 500px;
-  margin-top: 81px;
+  margin-top: 82px;
   margin-right: 63px;
 }
 
@@ -414,8 +450,8 @@ body {
 }
 
 .specifics p {
-  margin-top: 19px;
-  margin-bottom: 44px;
+  margin-top: 18px;
+  margin-bottom: 45px;
   padding-left: 2px;
 }
 
@@ -450,7 +486,7 @@ body {
 
   width: 100%;
   height: 8px;
-  margin-top: -5px;
+  margin-top: -6px;
 
   background: #f0c52e;
 
@@ -464,6 +500,35 @@ body {
 
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.specifics table {
+  position: relative;
+
+  margin-top: 45px;
+}
+
+.specifics tr:first-child {
+  position: absolute;
+}
+
+.specifics th {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.specifics td {
+  padding-right: 75px;
+
+  font-family: "Gilroy", "Century Gothic", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.specifics td:last-child {
+  padding-right: 0;
 }
 
 .popular {
