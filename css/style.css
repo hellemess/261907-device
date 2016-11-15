@@ -1431,9 +1431,9 @@ h1.headline-1 {
 .filter-header,
 .filter-content {
   float: left;
-  width: 200px;
+  width: 201px;
   margin-right: 67px;
-  margin-left: 60px;
+  margin-left: 59px;
 }
 
 .goods-header,
@@ -1480,6 +1480,8 @@ h1.headline-1 {
 }
 
 .goods-header .active,
+.goods-header a:active,
+.goods-header span:active,
 .pages .active {
   opacity: 1;
 }
@@ -1523,19 +1525,244 @@ h1.headline-1 {
 }
 
 .filter-content {
-  margin-top: 55px;
+  margin-top: 69px;
+
+  font-size: 14px;
+
+  color: black;
 }
 
 .filter-content fieldset {
+  position: relative;
+
   margin: 0;
+  margin-top: 37px;
   padding: 0;
+  padding-top: 58px;
 
   border: none;
   border-top: 2px solid black;
 }
 
+.filter-content fieldset:first-child {
+  margin-top: 0;
+}
+
+.filter-content legend {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.filter-range-controls {
+  position: relative;
+
+  padding-top: 11px;
+  padding-bottom: 30px;
+}
+
+.filter-range-controls .scale {
+  height: 2px;
+
+  background: #dbdbdb;
+}
+
+.filter-range-controls .bar {
+  width: 58%;
+  height: 2px;
+
+  background: #91c92f;
+}
+
+.filter-range-controls .toggle {
+  position: absolute;
+  top: 5px;
+
+  width: 10px;
+  height: 10px;
+
+  background: #eeeeee;
+  border: 2px solid black;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.filter-range-controls .toggle-min,
+.filter-cost-controls .min-cost {
+  left: -1px;
+}
+
+.filter-range-controls .toggle-max,
+.filter-cost-controls .max-cost {
+  left: 111px;
+}
+
+.filter-range-controls .toggle:active {
+  background: #91c92f;
+  border: 3px solid white;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+.filter-cost-controls {
+  position: relative;
+
+  font-size: 0;
+}
+
+.filter-cost-controls label {
+  position: absolute;
+  top: -21px;
+
+  display: inline-block;
+
+  font-family: "Gilroy", "Century Gothic", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+
+  opacity: 0.2;
+}
+
+.filter-cost-controls input {
+  width: 50px;
+
+  font-family: "Gilroy", "Century Gothic", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+
+  background: none;
+  border: none;
+
+  outline: none;
+}
+
+.filter-cost-controls .min-cost {
+  margin-left: 1px;
+}
+
+.filter-cost-controls .max-cost {
+  margin-left: -20px;
+}
+
+.filter-content ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-content li {
+  margin-top: 12px;
+}
+
+.filter-content li:first-child {
+  margin-top: 0;
+}
+
+.filter-checkbox,
+.filter-radio {
+  display: none;
+}
+
+.filter-color label,
+.filter-bluetooth label {
+  position: relative;
+
+  margin-left: 38px;
+}
+
+.filter-color label::before,
+.filter-color label::after,
+.filter-bluetooth label::before,
+.filter-bluetooth label::after {
+  content: "";
+
+  position: absolute;
+}
+
+.filter-color label::before {
+  top: -2px;
+  left: -40px;
+
+  width: 23px;
+  height: 23px;
+
+  background: #dbdbdb;
+}
+
+.filter-color label::after {
+  top: 3px;
+  left: -32px;
+
+  display: none;
+  width: 5px;
+  height: 8px;
+
+  transform: rotate(45deg);
+
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+}
+
+.filter-bluetooth label::before {
+  top: -2px;
+  left: -40px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #c6c6c6;
+  border-radius: 50%;
+}
+
+.filter-bluetooth label::after {
+  top: 5px;
+  left: -33px;
+
+  display: none;
+  width: 5px;
+  height: 5px;
+
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.filter-checkbox:checked + label::after,
+.filter-radio:checked + label::after {
+  display: block;
+}
+
+.filter-color label:hover::before {
+  background: #cecece;
+}
+
+.filter-color label:active::before {
+  background: #c4c4c4;
+}
+
+.filter-bluetooth label:hover::before {
+  border-color: #bcbcbc;
+}
+
+.filter-bluetooth label:active::before {
+  border-color: #acacac;
+}
+
 .filter-content button {
+  z-index: 0;
+
   width: 200px;
+  margin-top: 39px;
+
+  background: none;
+  border: none;
+
+  outline: none;
 }
 
 .goods-content {
