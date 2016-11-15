@@ -1540,6 +1540,10 @@ h1.headline-1 {
   background: rgba(0, 0, 0, 0.08);
 }
 
+.catalog-header .container {
+  background: transparent url("../img/catalog-header-background.png") repeat-y 0 0;
+}
+
 .catalog-header p,
 .pages a,
 .pages li {
@@ -1561,29 +1565,17 @@ h1.headline-1 {
 .filter-content {
   float: left;
   width: 201px;
+  margin-right: 68px;
   margin-left: 59px;
-  padding-right: 68px;
-
-  background: #eeeeee;
-}
-
-.filter-header {
-  background: #dbdbdb;
 }
 
 .goods-header,
 .goods-content {
   float: right;
   width: 760px;
-  padding-left: 72px;
+  margin-left: 72px;
 
   text-align: right;
-
-  background: white;
-}
-
-.goods-header {
-  background: #ebebeb;
 }
 
 .goods-header p,
@@ -1665,8 +1657,12 @@ h1.headline-1 {
   border-bottom-width: 0;
 }
 
+.catalog-content .container {
+  background: transparent url("../img/catalog-content-background.png") repeat-y 0 0;
+}
+
 .filter-content {
-  padding-top: 69px;
+  margin-top: 69px;
 
   font-size: 14px;
 
@@ -1905,7 +1901,7 @@ h1.headline-1 {
 }
 
 .goods-content {
-  padding-top: 19px;
+  margin-top: 19px;
 
   font-size: 0;
 }
@@ -2100,31 +2096,4 @@ h1.headline-1 {
 
 .selfie-sticks-footer .footer-middle {
   margin-top: 34px;
-}
-
-/*цветная подсветка блоков сетки*/
-/*
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
-
-body > * > * > * > *{
-  background: rgba(102, 205, 170, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(102, 205, 170);
-
-}
-
-body > * > * > * > * > * {
-  background: rgba(255, 0, 157, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(255, 0, 157);
 }
