@@ -1530,7 +1530,7 @@ h1.headline-1 {
   left: 0;
   z-index: -1;
 
-  width: 31.45%;
+  width: 30%;
   height: 100%;
 
   background: #eeeeee;
@@ -1561,17 +1561,29 @@ h1.headline-1 {
 .filter-content {
   float: left;
   width: 201px;
-  margin-right: 67px;
   margin-left: 59px;
+  padding-right: 68px;
+
+  background: #eeeeee;
+}
+
+.filter-header {
+  background: #dbdbdb;
 }
 
 .goods-header,
 .goods-content {
   float: right;
   width: 760px;
-  margin-left: 72px;
+  padding-left: 72px;
 
   text-align: right;
+
+  background: white;
+}
+
+.goods-header {
+  background: #ebebeb;
 }
 
 .goods-header p,
@@ -1654,7 +1666,7 @@ h1.headline-1 {
 }
 
 .filter-content {
-  margin-top: 69px;
+  padding-top: 69px;
 
   font-size: 14px;
 
@@ -1893,7 +1905,7 @@ h1.headline-1 {
 }
 
 .goods-content {
-  margin-top: 19px;
+  padding-top: 19px;
 
   font-size: 0;
 }
