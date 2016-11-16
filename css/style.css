@@ -34,7 +34,7 @@
   font-weight: 800;
   src:
     local("Gilroy"),
-    url("../fonts/gilroyextabold.woff") format("woff"),
+    url("../fonts/gilroyextrabold.woff") format("woff"),
     url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
@@ -142,17 +142,17 @@ body a {
   border: none;
 }
 
-.search-field::-webkit-input-placeholder {
-  color: black;
-  opacity: 0.3;
-}
-
 .search-field:-moz-placeholder {
   color: black;
   opacity: 0.3;
 }
 
 .search-field::-moz-placeholder {
+  color: black;
+  opacity: 0.3;
+}
+
+.search-field::-webkit-input-placeholder {
   color: black;
   opacity: 0.3;
 }
@@ -178,15 +178,15 @@ body a {
   box-shadow: 0 0 0 2px black;
 }
 
-.search:hover .search-field::-webkit-input-placeholder {
-  opacity: 0.6;
-}
-
 .search:hover .search-field:-moz-placeholder {
   opacity: 0.6;
 }
 
 .search:hover .search-field::-moz-placeholder {
+  opacity: 0.6;
+}
+
+.search:hover .search-field::-webkit-input-placeholder {
   opacity: 0.6;
 }
 
@@ -922,11 +922,13 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
 
   opacity: 0.2;
   filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 
 .logotypes img:hover {
   opacity: 1;
   filter: none;
+  -webkit-filter: none;
 }
 
 .info {
@@ -1258,6 +1260,8 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   width: 960px;
 
   transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
 }
 
 .write-us {
@@ -1313,11 +1317,6 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   outline: none;
 }
 
-.write-us-form input::-webkit-input-placeholder,
-.write-us-form textarea::-webkit-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
 .write-us-form input:-moz-placeholder,
 .write-us-form textarea:-moz-placeholder {
   color: rgba(70, 70, 70, 0.4);
@@ -1325,6 +1324,11 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
 
 .write-us-form input::-moz-placeholder,
 .write-us-form textarea::-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input::-webkit-input-placeholder,
+.write-us-form textarea::-webkit-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1404,10 +1408,14 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
 
 .exit::before {
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 
 .exit::after {
   transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 
 .exit:hover {
@@ -1494,6 +1502,8 @@ h1.headline-1 {
   height: 4px;
 
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 
   border-top: 1px solid black;
   border-right: 1px solid black;
@@ -1840,6 +1850,8 @@ h1.headline-1 {
   height: 8px;
 
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 
   border: 2px solid black;
   border-top: none;
@@ -1939,6 +1951,8 @@ h1.headline-1 {
   display: none;
 
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 
   font-size: 13px;
 
