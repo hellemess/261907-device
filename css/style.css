@@ -39,7 +39,7 @@
 }
 
 body {
-  min-width: 1160px;
+  min-width: 1240px;
   margin: 0;
 
   font-family: "Open Sans", "Verdana", sans-serif;
@@ -1014,10 +1014,12 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   width: 560px;
 }
 
-.contacts img {
-  width: 560px;
-  height: 222px;
-  margin-top: 24px;
+.contacts .map {
+  margin-top: 39px;
+}
+
+.contacts iframe {
+  border: none;
 }
 
 .contacts .btn {
@@ -1368,6 +1370,21 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   border-color: transparent;
 }
 
+@keyframes invalid {
+  96% {
+    background: rgba(230, 230, 230, 0.5);
+  }
+  100% {
+    background: rgba(237, 181, 181, 0.5);
+  }
+}
+
+.write-us-form input.invalid,
+.write-us-form textarea.invalid {
+  animation: invalid 2.5s;
+  animation-fill-mode: forwards;
+}
+
 .write-us-form button {
   width: 200px;
   margin-top: 34px;
@@ -1438,6 +1455,11 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+.write-us-show,
+.map-popup-show {
+  display: block;
+}
+
 @keyframes show-form {
   0% {
     transform: translateX(-50%) translateY(-50%) scale(0);
@@ -1454,11 +1476,6 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   }
 }
 
-.write-us-show,
-.map-popup-show {
-  display: block;
-}
-
 .write-us-show {
   animation: show-form 1s;
 }
@@ -1467,7 +1484,7 @@ input[id="credit-btn"]:checked ~ .services-slide .services-content {
   0%,
   32%,
   64%,
-  100% {
+  96% {
     background: white;
   }
   16%,
@@ -1545,10 +1562,6 @@ h1.headline-1 {
 
   border-top: 1px solid black;
   border-right: 1px solid black;
-}
-
-.breadcrumps li:nth-child(2)::after {
-  right: 16px;
 }
 
 .breadcrumps li:last-child::after {

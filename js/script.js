@@ -7,7 +7,7 @@ var eMailField = popup.querySelector("#e-mail-field");
 var letterField = popup.querySelector("#letter-field");
 var nameStorage = localStorage.getItem("nameField");
 var eMailStorage = localStorage.getItem("eMailField");
-var map = document.querySelector(".map img");
+var map = document.querySelector(".map");
 var mapPopup = document.querySelector(".map-popup");
 var mapExit = mapPopup.querySelector(".exit");
 
@@ -35,16 +35,57 @@ exit.addEventListener("click", function(event){
   event.preventDefault();
   popup.classList.remove("write-us-show");
   popup.classList.remove("write-us-error");
+  nameField.classList.remove("invalid");
+  eMailField.classList.remove("invalid");
+  letterField.classList.remove("invalid");
 });
 
 form.addEventListener("submit", function(event){
   if (!nameField.value || !eMailField.value || !letterField.value) {
     event.preventDefault();
+    popup.classList.remove("write-us-error");
+    nameField.classList.remove("invalid");
+    eMailField.classList.remove("invalid");
+    letterField.classList.remove("invalid");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("write-us-error");
+    if (!nameField.value) {
+      nameField.classList.add("invalid");
+    } else {
+      if (!eMailField.value) {
+        eMailField.classList.add("invalid");
+      } else {
+        if (!letterField.value) {
+          letterField.classList.add("invalid");
+        }
+      }
+    }
+    if (!eMailField.value) {
+      eMailField.classList.add("invalid");
+    } else {
+      if (!letterField.value) {
+        letterField.classList.add("invalid");
+      }
+    }
+    if (!letterField.value) {
+      letterField.classList.add("invalid");
+    }
   } else {
     localStorage.setItem("nameField", nameField.value);
     localStorage.setItem("eMailField", eMailField.value);
   }
+});
+
+nameField.addEventListener("focus", function(event){
+  nameField.classList.remove("invalid");
+});
+
+eMailField.addEventListener("focus", function(event){
+  eMailField.classList.remove("invalid");
+});
+
+letterField.addEventListener("focus", function(event){
+  letterField.classList.remove("invalid");
 });
 
 window.addEventListener("keydown", function(event){
@@ -52,6 +93,9 @@ window.addEventListener("keydown", function(event){
     if (popup.classList.contains("write-us-show")) {
       popup.classList.remove("write-us-show");
       popup.classList.remove("write-us-error");
+      nameField.classList.remove("invalid");
+      eMailField.classList.remove("invalid");
+      letterField.classList.remove("invalid");
     } else {
       if (mapPopup.classList.contains("map-popup-show")) {
         mapPopup.classList.remove("map-popup-show");
