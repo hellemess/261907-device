@@ -51,21 +51,9 @@ form.addEventListener("submit", function(event){
     popup.classList.add("write-us-error");
     if (!nameField.value) {
       nameField.classList.add("invalid");
-    } else {
-      if (!eMailField.value) {
-        eMailField.classList.add("invalid");
-      } else {
-        if (!letterField.value) {
-          letterField.classList.add("invalid");
-        }
-      }
     }
     if (!eMailField.value) {
       eMailField.classList.add("invalid");
-    } else {
-      if (!letterField.value) {
-        letterField.classList.add("invalid");
-      }
     }
     if (!letterField.value) {
       letterField.classList.add("invalid");
