@@ -903,6 +903,8 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
 }
 
 .logotypes li {
+  position: relative;
+
   float: left;
   width: 260px;
   margin-right: 40px;
@@ -915,16 +917,14 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
 .logotypes img {
   width: 260px;
   height: 100px;
-
-  opacity: 0.2;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
 }
 
-.logotypes img:hover {
-  opacity: 1;
-  filter: none;
-  -webkit-filter: none;
+.logotypes .pale {
+  position: absolute;
+}
+
+.logotypes .pale:hover {
+  opacity: 0;
 }
 
 .logotypes + .container {
