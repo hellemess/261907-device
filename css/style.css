@@ -1260,9 +1260,9 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
   display: none;
   width: 960px;
 
-  transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 .write-us {
@@ -1373,7 +1373,7 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
   border-color: transparent;
 }
 
-@keyframes invalid {
+@-webkit-keyframes invalid {
   96% {
     background: #f3f3f3;
   }
@@ -1382,7 +1382,7 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
   }
 }
 
-@-webkit-keyframes invalid {
+@keyframes invalid {
   96% {
     background: #f3f3f3;
   }
@@ -1393,10 +1393,10 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
 
 .write-us-form input.invalid,
 .write-us-form textarea.invalid {
-  animation: invalid 2.5s;
   -webkit-animation: invalid 2.5s;
-  animation-fill-mode: forwards;
+          animation: invalid 2.5s;
   -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .write-us-form button {
@@ -1438,15 +1438,15 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
 }
 
 .exit::before {
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .exit::after {
-  transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .exit:hover {
@@ -1474,61 +1474,47 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
   display: block;
 }
 
-@keyframes show-form {
+@-webkit-keyframes show-form {
   0% {
-    transform: translateX(-50%) translateY(-50%) scale(0);
     -webkit-transform: translateX(-50%) translateY(-50%) scale(0);
+            transform: translateX(-50%) translateY(-50%) scale(0);
 
     opacity: 0.4;
   }
   80% {
-    transform: translateX(-50%) translateY(-50%) scale(1.1);
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
+            transform: translateX(-50%) translateY(-50%) scale(1.1);
 
     opacity: 1;
   }
   100% {
-    transform: translateX(-50%) translateY(-50%) scale(1);
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+            transform: translateX(-50%) translateY(-50%) scale(1);
   }
 }
 
-@-webkit-keyframes show-form {
+@keyframes show-form {
   0% {
-    transform: translateX(-50%) translateY(-50%) scale(0);
     -webkit-transform: translateX(-50%) translateY(-50%) scale(0);
+            transform: translateX(-50%) translateY(-50%) scale(0);
 
     opacity: 0.4;
   }
   80% {
-    transform: translateX(-50%) translateY(-50%) scale(1.1);
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
+            transform: translateX(-50%) translateY(-50%) scale(1.1);
 
     opacity: 1;
   }
   100% {
-    transform: translateX(-50%) translateY(-50%) scale(1);
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+            transform: translateX(-50%) translateY(-50%) scale(1);
   }
 }
 
 .write-us-show {
-  animation: show-form 1s;
   -webkit-animation: show-form 1s;
-}
-
-@keyframes form-error {
-  0%,
-  32%,
-  64%,
-  96% {
-    background: white;
-  }
-  16%,
-  48%,
-  80% {
-    background: #f0c52e;
-  }
+          animation: show-form 1s;
 }
 
 @-webkit-keyframes form-error {
@@ -1545,9 +1531,23 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
   }
 }
 
+@keyframes form-error {
+  0%,
+  32%,
+  64%,
+  96% {
+    background: white;
+  }
+  16%,
+  48%,
+  80% {
+    background: #f0c52e;
+  }
+}
+
 .write-us-error {
-  animation: form-error 2.5s;
   -webkit-animation: form-error 2.5s;
+          animation: form-error 2.5s;
 }
 
 .inner-header .header-logo {
@@ -1616,9 +1616,9 @@ h1.headline-1 {
   width: 4px;
   height: 4px;
 
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 
   border-top: 1px solid black;
   border-right: 1px solid black;
@@ -1951,9 +1951,9 @@ h1.headline-1 {
   width: 5px;
   height: 8px;
 
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 
   border: 2px solid black;
   border-top: none;
@@ -2052,9 +2052,9 @@ h1.headline-1 {
 
   display: none;
 
-  transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 
   font-size: 13px;
 
@@ -2225,7 +2225,9 @@ h1.headline-1 {
 
   box-shadow: none;
 
-  transform: none;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 
 .inner-main .write-us-form {
