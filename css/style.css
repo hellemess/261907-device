@@ -399,7 +399,7 @@ body a {
 }
 
 .catalog-item a {
-  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-family: "Open Sans", "Verdana", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 2.4;
@@ -482,7 +482,7 @@ input[id="btn-3"]:checked ~ .slider-content {
   top: -12px;
   right: 50px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 1;
@@ -970,7 +970,7 @@ input[id="credit-btn"]:checked ~ .services-slider .services-content {
   padding: 0;
 
   list-style: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   letter-spacing: 0.05em;
 
